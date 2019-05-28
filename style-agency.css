@@ -1,0 +1,530 @@
+/* mini rest */
+
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+ul{
+	list-style-type:none;
+}
+
+/*Police Roboto*/
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('polices/roboto-regular-webfont.eot');
+    src: url('polices/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/roboto-regular-webfont.woff2') format('woff2'),
+         url('polices/roboto-regular-webfont.woff') format('woff'),
+         url('polices/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*BODY*/
+
+body{
+	font-family: 'robotoregular', Arial, Times;	
+}
+#page{
+	width:100%;
+	margin:0 auto;
+}
+
+/* BANDEAU*/				  
+.bandeau{
+	width:100%;
+	height:90px;
+	display:flex;	
+	justify-content:space-between;
+	flex-direction:row;
+}
+.bandeau figure{
+	margin-left:85px;
+	margin-top:15px;
+}
+
+/*Menu principal*/
+#menuprincipal{
+	margin-right:10%;
+	width:30%;
+	height:auto;
+}
+#menuprincipal ul{
+	display:flex;
+	flex-direction:row;
+	align-content:space-between;
+}
+#menuprincipal li{
+	margin-top:34px;
+	margin-right:8%;
+}
+#menuprincipal li a:hover{
+	border-top:3px solid #54a2c6;
+	padding-top:30px;
+}	
+#menuprincipal ul li a {
+	color:black;
+	padding: 10px 10px;
+}
+
+/* Section: slider*/			  
+#slider{
+	width:100%;
+	position:relative;
+}
+#slider img{
+	width: 100%;
+	max-height:450px;
+}
+.titre{
+	position:absolute;
+	line-height: 1.2;
+	bottom: 40%;
+	margin-left:7%;
+	display:block;
+	width:34%;
+}
+.titre h1{
+	text-transform:uppercase;
+	color:white;	
+}
+.titre p{
+	color:white;
+	margin-bottom:20px;
+	font-size:14px;
+}
+.bouton{
+	color:white;
+	font-weight: bold;
+	background-color:#54a2c6;
+	padding:7px;
+	border:none;
+	border-bottom: 4px solid rgb(70,140,173);
+	border-radius: 2px;
+}
+
+/* Section: NOS SERVICES*/				
+#services{
+	margin-top:30px;
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+}	
+#services header{
+	width:100%;
+	text-align:center;
+}
+#services header h2{
+	font-size: 2em;
+	padding-bottom: 10px;
+	text-transform:uppercase;
+	height:70px;
+	background-image:url('images-agency/rond.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:10%;
+}
+#services header p{
+	margin-bottom:50px;
+}
+
+/*Section: Nos services - image PC*/
+.pc{
+	width:45%;
+}
+.pc img{
+	width:70%;
+	padding-left:132px;
+}
+
+/*Section: Nos services - textes et images associés*/
+.art figure img{
+	height:10%;
+	min-height:74px;
+	width:10%;
+	min-width:74px;
+	margin-right:20px;
+}
+.art{
+	width:54%;
+}
+.art figure{
+	display:flex;
+	text-align:justify;
+	justify-content:space-around;
+}
+.art figcaption{
+	margin-top:20px;
+}
+.art figcaption p{
+	width:80%;
+}
+
+/*Section : NOS PROJETS*/
+#projets{
+	margin-top:30px;
+	padding-top:20px;
+	background-color:#f5f5f5;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+}	
+#projets header{
+	width:100%;
+	text-align:center;
+}
+#projets header h2{
+	font-size: 2em;
+	padding-bottom: 10px;
+	text-transform:uppercase;
+	height:70px;
+	background-image:url('images-agency/rond.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:10%;
+}
+#projets header p{
+	margin-bottom:50px;
+}
+	
+/*Section : NOS PROJETS - Barre d'onglets-  */
+#onglet{
+	width:100%;	
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	margin:20px 0;
+	margin-bottom: 40px;
+}
+#onglet ul{
+	display:flex;
+}
+#onglet li{
+	position:relative;
+}
+#onglet li:hover a{
+	background:#5cadd3;
+	border-bottom: 4px solid rgb(70,140,173);
+	color:white;
+}
+#onglet li:hover span{
+	display:block;	
+}
+#onglet span{
+	display:none;
+	position: absolute;
+	color:#5cadd3;
+	bottom:-15px;
+	left:40%;
+}
+#onglet li a{
+	display:block;
+	background-color:#e5e5e5;
+	padding:10px;
+	color:black;
+}
+#onglet li:first-child a{
+	border-bottom-left-radius: 4px;
+	border-top-left-radius:4px;
+}
+#onglet li:last-child a{
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+/* Section: NOS PROJETS - Gallery*/
+.gallery{
+	width:90%;
+	margin:auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}			
+.gallery img{
+	width:100%;
+}
+.gallery figure{
+	position: relative;
+	width: 23.5%;
+	min-width: 235px;
+	margin-bottom: 20px;
+}
+.gallery figcaption{
+	display:block;
+	height: 50px;
+	width: 95.6%;
+	position: absolute;
+	bottom: 4.5px;
+	left:0px;
+	padding-top:2px;
+	padding-left: 7px;
+	padding-right:7px;
+	background-color: rgba(114, 87, 24, 0.4);
+	color:white;
+}
+
+/*Icone eye (cercle=border-radius)*/
+.fa{
+	position:absolute;
+	right:10px;
+	bottom:32px;
+	padding:10px;
+	border:2px solid white;
+	border-radius:50%;
+	font-size:20px;
+	background-color:#54a2c6;
+}
+
+/*Légende visible quand survolée*/
+.image figcaption{
+	visibility:hidden;
+}
+.image img:hover + figcaption{
+	visibility:visible;
+}
+
+/* Section: MAP */
+#map{
+	position:relative;
+	width:100%;
+}
+#map iframe{
+	width:100%;
+}
+
+/*FORMULAIRE*/					
+.formulaire{
+	width: 18%;
+	padding:13px;
+	right:4.8%;
+	position:absolute;
+	bottom:30px;
+	font-family:Arial;
+	background:rgba(255,255,255, 0.5);
+	font-family: 'robotoregular', Arial, Times;	
+}
+.formulaire form p{
+	line-height: 200%;
+}
+.formulaire address{
+	line-height: 150%;
+}
+.formulaire h3{
+	padding-bottom:4px;
+}
+.formulaire address{
+	font-size:13px;
+	font-style:normal;
+}
+input[type="text"], input[type="email"], input[type="subject"]{
+	width:95%;
+	height:22px;
+	border:1px solid #DCDCDC;
+	border-radius: 2px;
+	padding-left:8px;
+	font-family:Arial;
+	font-size:12px;
+}	
+#message{
+	margin-top:12px;
+	width: 95%;
+	border:none;
+	padding-left:8px;
+	padding-top:6px;
+	font-family:Arial;
+	font-size:12px;
+	border:1px solid #DCDCDC;
+	border-radius: 2px;
+}
+
+/* FOOTER*/
+#pied{
+	width:99%;
+	background-color:#e5e5e5;
+	text-align:center;
+	color:black;
+	padding:6px;
+	font-family: 'robotoregular', Arial, Times;	
+}
+
+/* Mode Tablette*/
+
+@media screen and (min-width:768px) and (max-width:1279px)
+{
+	#page{
+		width: 700px;
+	}
+	/*Section: menu principal*/
+	#menuprincipal ul li a{
+		padding:0px;
+	}
+	/*Section: slider*/
+	.titre{
+		top:80px;
+		width:43%;
+		line-height: 1.03;
+	}
+
+	/*Section: Nos services*/
+	#services header h2{
+		font-size:1.5em;
+		padding-bottom:0px;
+	}
+	.pc img{
+		display:none;
+	}
+	.art{
+		width: 100%;
+	}
+	.art figure{
+		margin-left:10%;
+	}
+
+	/*Section: Nos projets*/
+	#projets header h2{
+		font-size:1.5em;
+		padding-bottom:0px;
+	}
+
+	/*Section: map*/
+	.formulaire{
+		width:30%;
+	}
+}
+
+/* Mode Mobile*/
+@media screen and (min-width:320px) and (max-width:757px)
+{	
+	#page{
+		width:300px;
+	}
+
+	/*Header: Bandeau*/
+	.bandeau{
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+		height:auto;
+	}
+	.bandeau figure{
+		margin-left:25px;
+		margin-top:15px;
+	}
+
+	/*Menu principal*/
+	#menuprincipal{
+		width: 30%;
+		padding-right: 0px;
+		margin-left:2%;
+	}
+	#menuprincipal li{
+		margin-bottom: 10px;
+	}
+	#menuprincipal ul li a {
+		padding: 5px 5px;
+	}
+	#menuprincipal li a:hover{
+		padding-top:15px;
+	}	
+
+	/*Section: slider*/
+	#slider{
+		display:none;
+	}
+
+	/*Section: Nos services*/
+	#services header h2{
+		font-size:1.5em;
+		background-size:30%;
+	}
+	#services header p br{
+		display:none;
+	}
+	.pc img{
+		display:none;
+	}
+	.art img{
+		display:none;
+	}
+	.art{
+		width: 100%;
+		margin-left:5%;
+	}
+	.art figure{
+		padding-bottom: 10px;
+	}
+	.art figcaption{
+		width: 100%;
+	}
+	.art figcaption P{
+		width: 90%;
+	}
+
+	/*Section: Nos projets*/
+	#projets header h2{
+		font-size:1.5em;
+		background-size:30%;
+	}
+	#projets header p br{
+		display:none;
+	}
+	.gallery figcaption{
+		padding-left: 3px;
+	}
+	#onglet li a{
+		padding:6px;
+		font-size:15px;
+	}
+
+	/*Partie GAllery*/
+	.gallery {
+		justify-content:center;
+	}
+
+	/*Section: map*/
+	#map{
+		display:flex;
+		width: 100%;
+		justify-content: center;
+	}
+	#map iframe{
+		display:none;
+	}
+	.formulaire{
+		width: 100%;
+		position: static;
+	}
+}
+	
+	/*Autres écrans*/
+	@media screen and (min-width:1280px)
+{
+		#page{
+			width:1280px;
+		}
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	

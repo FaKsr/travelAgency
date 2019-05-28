@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+			<title>WebAgency</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/><!--permet un design responsive-->
+		<meta http-equiv="X-UA-compatible" content="IE=edge"><!--améliore la comptabilité sur le navigateur IE-->
+
+	<!-- Pour le référencement -->
+
+		<meta name="description" content="webagency, agence web"/>
+		<meta name="keywords" content="webagency, projets web, services, portfolio,ux design, ui design, seo, responsive, test, creative, corporate" />
+	
+	<!-- Feuille de style agency -->
+
+		<link href="style-agency.css" rel="stylesheet" media="screen" />
+	
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/><!--BootstrapCDN pour Unicode(Font Awesome)-->
+
+	</head>
+
+<body>
+
+	<!--L'entête du site: Bandeau-->
+
+	<div id="page">
+	
+		<header class="bandeau">
+			<figure>
+				<img src="images-agency/logo.png"
+			alt="webagency"/>
+			</figure>
+	
+	<!--Menu principal-->
+	
+			<nav id="menuprincipal">
+				<ul>
+					<li><a href="index.html" class="choix">Accueil</a></li>
+					<li><a href="#services">Services</a></li><!--ancre pour aller directement à la section correspondante-->
+					<li><a href="#projets">Portfolio</a></li>
+					<li><a href="#map">Contact</a></li>
+				</ul>
+			</nav>
+	
+		</header>
+	
+	<!--Image a remplacer par un slider (suite de la refonte avec animation)-->
+		
+	<section id="slider">
+		<img src="images-agency/bg1.jpg" alt="imgage enfant"/>
+			<div class="titre">
+				<h1><span style="color:#5cadd3;">Webagency</span>: l'agence de tous vos projets !</h1>
+				<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+				<a class="bouton" href="#services" >Plus d'infos</a> 
+			</div>	
+	</section>
+	
+	<!--Section: Nos services-->
+	
+	<section id="services">	
+		<!--l'entete de Services-->
+		<header>
+		
+			<h2>Nos services</h2>
+			<p>Notre agence web est fondée sur l’étude des comportements utilisateurs pour designer<br /> des services digitaux innovants et des sites web ou e-commerce performants.</p>
+		
+		</header>	
+
+		<!--Image ordinateur de Services-->
+		<div class="pc">
+			<img src="images-agency/main-feature.png" alt="ordinateur" />
+		</div>
+		
+		<!--Images + texte de Services-->		
+		<div class="art">	
+		
+			<figure>
+				<img src="images-agency/line.png"/>
+				<figcaption>
+						<h3>UX design</h3>
+						<p>Notre but est de vous proposer une navigation optimale, un plaisir d’utilisation mais aussi une facilité de compréhension.</p>
+				</figcaption>
+			</figure>
+		
+			<figure>
+				<img src="images-agency/cubes.png"/>
+					<figcaption>
+						<h3>UI design</h3>
+						<p>Expert des outils interactifs, nous intervenons dans l’aspect visuel de votre projet afin de capter l’attention de l’utilisateur. Nous facilitons la navigation de l'utilisateur sur un site ou une application.</p>
+				</figcaption>
+			</figure>
+		
+			<figure>
+				<img src="images-agency/pie.png"/>
+					<figcaption>
+						<h3>SEO</h3>
+						<p>Notre but par le référencement naturel est d’augmenter la qualité, la compréhension, mais surtout la visibilité de votre site internet au sein des résultats des moteurs de recherche.</p>
+					</figcaption>		
+			</figure>
+		
+		</div>	
+	
+	</section>
+	
+	<!--Section: Nos projets-->
+	
+	<!--l'entête-->
+	<section id="projets">
+	
+		<header>
+			<h2>Nos projets</h2>
+			<p>Nous réalisons les interfaces graphiques et visuelles de votre projet. Sites web responsives,<br /> applications mobiles et tablettes. Chaque projet est décliné en prototype de test.</p>
+		</header>
+
+	<!--les onglets pour portfolio-->
+		<div id="onglet">
+			<ul>
+				<li>				
+					<a href="#">All Works</a>	
+						<span>&#9660;</span>
+				</li>			
+
+				<li>
+					<a href="#">Creative</a>
+						<span>&#9660;</span>
+				</li>
+
+				<li>
+					<a href="#">Corporate</a>
+						<span>&#9660;</span>
+				</li>
+
+				<li>
+					<a href="#">Portfolio</a>
+						<span>&#9660;</span>
+				</li>
+
+			</ul>
+		</div>
+		
+	<!--Gallery-->	
+		<div class="gallery">
+		
+			<figure class="image"> <!--class: permet la visiualisation de la légende/curseur-->
+				<img src="images-agency/01.jpg" alt="lunette" />
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Creative<br />Lunette
+						</p>	
+					</figcaption>
+			</figure>		
+				
+			<figure class="image">	
+				<img src="images-agency/02.jpg" alt="lapin" />
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Creative<br />Lapin illustration</p>
+					</figcaption>
+			</figure>	
+			
+			<figure class="image">	
+				<img src="images-agency/03.jpg" alt="logo" />
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Corporate<br />Logo</p>
+					</figcaption>
+			</figure>
+			
+			<figure class="image">	
+				<img src="images-agency/04.jpg" alt="flyer" /> 
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Corporate<br />Flyer</p>
+					</figcaption>
+			</figure>
+			
+			<figure class="image">	
+				<img src="images-agency/05.jpg" alt="shopping" /> 
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Corporate<br />Shopping bag</p>
+					</figcaption>
+			</figure>
+			
+			<figure class="image">	
+				<img src="images-agency/06.jpg" alt="chine" /> 
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Portfolio<br />Paysage</p>
+					</figcaption>
+			</figure>
+			
+			<figure class="image">	
+				<img src="images-agency/07.jpg" alt="fusee" /> 
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Portfolio<br />Fusée</p>
+					</figcaption>
+			</figure>
+		
+			<figure class="image">	
+				<img src="images-agency/08.jpg" alt="theme" /> 
+					<figcaption>
+						<i class="fa fa-eye"></i><!--icone Eye-->
+						<p>Portfolio<br />Thème design</p>
+					</figcaption>
+			</figure>
+		</div>
+		
+	</section>
+	
+	<!--Section: Map Paris-->
+	
+	<!--map avec iframe-->
+	<section id="map">
+	
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20993.745673844547!2d2.332308572323763!3d48.873116607523265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1509009752273" width="600" height="450"  style="border:0" allowfullscreen></iframe>
+	
+	<!--Formulaire contact-->
+	
+	<!-- 1ere partie du formulaire-->
+		<div class="formulaire">
+			<form action="envoyer.php" method="post">
+				<h3>Contact Info</h3>
+				<h5>WebAgency SAS</h5>	
+				<address>25 Rue d'Hauteville 75010 Paris 		<br />
+				Tel:01 02 03 04 05<br />
+				</address>
+				
+	
+	<!--2ème partie du formulaire-->
+				<p><input type="text" name="nom" placeholder="Name"/></p>
+		
+				<p><input type="email" name="email" placeholder="Email"/> </p>
+		
+				<p><input type="text" name="subject"  placeholder="Subject"/></p>
+		
+				<p><textarea rows="6" name="message" placeholder="Message" id="message"></textarea></p>
+	
+	<!--bouton d'envoi:Send Message-->
+				<p><input class="bouton" type="submit" value="Send Message"/></p>
+			</form>
+		</div>
+	</section>
+	
+	<!--Footer-->
+	
+	<footer id="pied">&copy;2017 WebAgency</footer>
+	
+	</div>
+</body>
+</html>
